@@ -126,6 +126,10 @@ function mochaSaucePlease(options, fn) {
 			runner.stats.failed = failed;
 			runner.stats.xUnitReport = xUnitReport;
 			runner.stats.jsonReport = jsonReport;
+                        if(failed) {
+                          $('.suite').addClass('hidden');
+                          $('.fail').parents('.suite').removeClass('hidden');
+                        }
 			window.testResults = runner.stats;
 			window.chocoReady = true;
 		});
