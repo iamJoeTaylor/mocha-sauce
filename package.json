@@ -9,7 +9,7 @@
 		"max-component": "*",
 		"sum-component": "*",
 		"term-canvas": "*",
-		"wd": "0.3.3",
+		"wd": "git://github.com/admc/wd.git",
 		"request": "*",
 		"debug": "*",
 		"batch": "*"
