@@ -34,14 +34,16 @@ function FancyJSON(runner) {
 
 		if(suite.suites.length) {
 
-			result.suites = [];
+			result.failedSuites = [];
 
 			var sub = null;
 			for (var j = 0; j < suite.suites.length; j++) {
 
 				sub = {};
 				recurse(suite.suites[j], sub);
-				result.suites.push(sub);
+
+				if(!sub.passed)
+					result.failedSuites.push(sub);
 
 				result.durationSec += sub.durationSec || 0;
 
