@@ -136,9 +136,22 @@ MochaSauce.prototype.start = function(fn) {
 
 								// update Sauce Labs with custom test data
 								var data = {
-									'custom-data': { testReport: res.jsonReport },
 									'passed': !res.failures
 								};
+
+								// make sure custom-data isn't above max bytes allowed by Sauce API
+								if(Buffer.byteLength(JSON.stringify(res.jsonReport), 'utf8') < 30000) {
+									data['custom-data'] = { testReport: res.jsonReport }
+								} else {
+									data['custom-data'] = { testReport: 'jsonReport was too large' }
+								}
+
+
+								if(res.failures) {
+                                                                        console.log(conf, res);
+									console.log(conf.browserName + ' failed. https://saucelabs.com/tests/' + browser.sessionID);
+								}
+
 
 								request({
 									method: "PUT",
