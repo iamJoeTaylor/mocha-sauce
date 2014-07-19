@@ -131,6 +131,7 @@ MochaSauce.prototype.start = function(fn) {
 
 								// add browser conf to be able to identify in the end callback
 								res.browser = conf;
+                                                                conf.session = browser.sessionID;
 
 								debug('results %j', res);
 
@@ -144,12 +145,6 @@ MochaSauce.prototype.start = function(fn) {
 									data['custom-data'] = { testReport: res.jsonReport }
 								} else {
 									data['custom-data'] = { testReport: 'jsonReport was too large' }
-								}
-
-
-								if(res.failures) {
-                                                                        console.log(conf, res);
-									console.log(conf.browserName + ' failed. https://saucelabs.com/tests/' + browser.sessionID);
 								}
 
 
