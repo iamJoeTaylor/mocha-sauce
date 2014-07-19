@@ -21,6 +21,7 @@ function MochaSauce(conf) {
 	this.key = conf.accessKey || process.env.SAUCE_API_KEY;
 	this.host = conf.host || process.env.SELENIUM_HOST || "ondemand.saucelabs.com";
 	this.port = conf.port || process.env.SELENIUM_PORT || 80;
+        this.tunnelIdentifier = conf.tunnelIdentifier;
 
 	this.browsers = [];
 
@@ -85,6 +86,10 @@ MochaSauce.prototype.start = function(fn) {
 		conf.tags = self.tags;
 		conf.name = self.name;
 		conf.build = self.build;
+
+                if(self.tunnelIdentifier) {
+                  conf.tunnel_identifier = self.tunnelIdentifier;
+                }
 
 		// disable Sauce features not needed for unit tests (video + screenshot recording)
 		conf['record-video'] = self._video;
