@@ -22,6 +22,7 @@ function MochaSauce(conf) {
 	this.host = conf.host || process.env.SELENIUM_HOST || "ondemand.saucelabs.com";
 	this.port = conf.port || process.env.SELENIUM_PORT || 80;
         this.tunnel_identifier = conf.tunnelIdentifier;
+        this['max-duration'] = conf.maxDuration || 1800;
 
 	this.browsers = [];
 
@@ -86,6 +87,7 @@ MochaSauce.prototype.start = function(fn) {
 		conf.tags = self.tags;
 		conf.name = self.name;
 		conf.build = self.build;
+                conf["max-duration"] = self["max-duration"];
                 if(self.tunnel_identifier) {
                   conf.tunnel_identifier = self.tunnel_identifier;
                 }
