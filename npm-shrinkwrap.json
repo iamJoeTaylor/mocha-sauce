@@ -1,0 +1,816 @@
+{
+  "name": "mocha-sauce",
+  "version": "0.0.5",
+  "dependencies": {
+    "batch": {
+      "version": "0.5.1",
+      "from": "batch@*",
+      "resolved": "http://npm.corp.squareup.com:8000/batch/-/batch-0.5.1.tgz"
+    },
+    "debug": {
+      "version": "1.0.4",
+      "from": "debug@*",
+      "resolved": "http://npm.corp.squareup.com:8000/debug/-/debug-1.0.4.tgz",
+      "dependencies": {
+        "ms": {
+          "version": "0.6.2",
+          "from": "ms@0.6.2",
+          "resolved": "http://npm.corp.squareup.com:8000/ms/-/ms-0.6.2.tgz"
+        }
+      }
+    },
+    "max-component": {
+      "version": "1.0.0",
+      "from": "max-component@*",
+      "resolved": "http://npm.corp.squareup.com:8000/max-component/-/max-component-1.0.0.tgz",
+      "dependencies": {
+        "to-function": {
+          "version": "2.0.5",
+          "from": "to-function@*",
+          "resolved": "http://npm.corp.squareup.com:8000/to-function/-/to-function-2.0.5.tgz",
+          "dependencies": {
+            "component-props": {
+              "version": "1.1.1",
+              "from": "component-props@*",
+              "resolved": "http://npm.corp.squareup.com:8000/component-props/-/component-props-1.1.1.tgz"
+            },
+            "remove-try-require": {
+              "version": "0.0.0",
+              "from": "remove-try-require@0.0.0",
+              "resolved": "http://npm.corp.squareup.com:8000/remove-try-require/-/remove-try-require-0.0.0.tgz",
+              "dependencies": {
+                "ast-transform": {
+                  "version": "0.0.0",
+                  "from": "ast-transform@0.0.0",
+                  "resolved": "http://npm.corp.squareup.com:8000/ast-transform/-/ast-transform-0.0.0.tgz",
+                  "dependencies": {
+                    "through": {
+                      "version": "2.3.4",
+                      "from": "through@~2.3.4",
+                      "resolved": "http://npm.corp.squareup.com:8000/through/-/through-2.3.4.tgz"
+                    },
+                    "esprima": {
+                      "version": "1.0.4",
+                      "from": "esprima@~1.0.4",
+                      "resolved": "http://npm.corp.squareup.com:8000/esprima/-/esprima-1.0.4.tgz"
+                    },
+                    "escodegen": {
+                      "version": "1.2.0",
+                      "from": "escodegen@~1.2.0",
+                      "resolved": "http://npm.corp.squareup.com:8000/escodegen/-/escodegen-1.2.0.tgz",
+                      "dependencies": {
+                        "estraverse": {
+                          "version": "1.5.1",
+                          "from": "estraverse@~1.5.0",
+                          "resolved": "http://npm.corp.squareup.com:8000/estraverse/-/estraverse-1.5.1.tgz"
+                        },
+                        "esutils": {
+                          "version": "1.0.0",
+                          "from": "esutils@~1.0.0",
+                          "resolved": "http://npm.corp.squareup.com:8000/esutils/-/esutils-1.0.0.tgz"
+                        },
+                        "source-map": {
+                          "version": "0.1.37",
+                          "from": "source-map@~0.1.30",
+                          "resolved": "http://npm.corp.squareup.com:8000/source-map/-/source-map-0.1.37.tgz",
+                          "dependencies": {
+                            "amdefine": {
+                              "version": "0.1.0",
+                              "from": "amdefine@>=0.0.4",
+                              "resolved": "http://npm.corp.squareup.com:8000/amdefine/-/amdefine-0.1.0.tgz"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "ast-parents": {
+                  "version": "0.0.1",
+                  "from": "ast-parents@0.0.1",
+                  "resolved": "http://npm.corp.squareup.com:8000/ast-parents/-/ast-parents-0.0.1.tgz"
+                },
+                "replace-method": {
+                  "version": "0.0.0",
+                  "from": "replace-method@0.0.0",
+                  "resolved": "http://npm.corp.squareup.com:8000/replace-method/-/replace-method-0.0.0.tgz",
+                  "dependencies": {
+                    "recast": {
+                      "version": "0.5.27",
+                      "from": "recast@~0.5.7",
+                      "resolved": "http://npm.corp.squareup.com:8000/recast/-/recast-0.5.27.tgz",
+                      "dependencies": {
+                        "esprima": {
+                          "version": "1.1.0-dev-harmony",
+                          "from": "esprima@git+https://github.com/ariya/esprima.git#harmony",
+                          "resolved": "git+https://github.com/ariya/esprima.git#2bb17ef9a45c88e82d72c2c61b7b7af93caef028"
+                        },
+                        "source-map": {
+                          "version": "0.1.32",
+                          "from": "source-map@0.1.32",
+                          "resolved": "http://npm.corp.squareup.com:8000/source-map/-/source-map-0.1.32.tgz",
+                          "dependencies": {
+                            "amdefine": {
+                              "version": "0.1.0",
+                              "from": "amdefine@>=0.0.4",
+                              "resolved": "http://npm.corp.squareup.com:8000/amdefine/-/amdefine-0.1.0.tgz"
+                            }
+                          }
+                        },
+                        "private": {
+                          "version": "0.1.5",
+                          "from": "private@~0.1.4",
+                          "resolved": "http://npm.corp.squareup.com:8000/private/-/private-0.1.5.tgz"
+                        },
+                        "cls": {
+                          "version": "0.1.5",
+                          "from": "cls@~0.1.3",
+                          "resolved": "http://npm.corp.squareup.com:8000/cls/-/cls-0.1.5.tgz"
+                        },
+                        "ast-types": {
+                          "version": "0.3.38",
+                          "from": "ast-types@~0.3.35",
+                          "resolved": "http://npm.corp.squareup.com:8000/ast-types/-/ast-types-0.3.38.tgz"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "mocha": {
+      "version": "1.20.1",
+      "from": "mocha@*",
+      "resolved": "http://npm.corp.squareup.com:8000/mocha/-/mocha-1.20.1.tgz",
+      "dependencies": {
+        "commander": {
+          "version": "2.0.0",
+          "from": "commander@2.0.0",
+          "resolved": "http://npm.corp.squareup.com:8000/commander/-/commander-2.0.0.tgz"
+        },
+        "growl": {
+          "version": "1.7.0",
+          "from": "growl@1.7.x",
+          "resolved": "http://npm.corp.squareup.com:8000/growl/-/growl-1.7.0.tgz"
+        },
+        "jade": {
+          "version": "0.26.3",
+          "from": "jade@0.26.3",
+          "resolved": "http://npm.corp.squareup.com:8000/jade/-/jade-0.26.3.tgz",
+          "dependencies": {
+            "commander": {
+              "version": "0.6.1",
+              "from": "commander@0.6.1",
+              "resolved": "http://npm.corp.squareup.com:8000/commander/-/commander-0.6.1.tgz"
+            },
+            "mkdirp": {
+              "version": "0.3.0",
+              "from": "mkdirp@0.3.0",
+              "resolved": "https://registry.npmjs.org/mkdirp/-/mkdirp-0.3.0.tgz"
+            }
+          }
+        },
+        "diff": {
+          "version": "1.0.7",
+          "from": "diff@1.0.7",
+          "resolved": "http://npm.corp.squareup.com:8000/diff/-/diff-1.0.7.tgz"
+        },
+        "mkdirp": {
+          "version": "0.3.5",
+          "from": "mkdirp@0.3.5",
+          "resolved": "https://registry.npmjs.org/mkdirp/-/mkdirp-0.3.5.tgz"
+        },
+        "glob": {
+          "version": "3.2.3",
+          "from": "glob@3.2.3",
+          "resolved": "http://npm.corp.squareup.com:8000/glob/-/glob-3.2.3.tgz",
+          "dependencies": {
+            "minimatch": {
+              "version": "0.2.14",
+              "from": "minimatch@~0.2.11",
+              "resolved": "http://npm.corp.squareup.com:8000/minimatch/-/minimatch-0.2.14.tgz",
+              "dependencies": {
+                "lru-cache": {
+                  "version": "2.5.0",
+                  "from": "lru-cache@2",
+                  "resolved": "http://npm.corp.squareup.com:8000/lru-cache/-/lru-cache-2.5.0.tgz"
+                },
+                "sigmund": {
+                  "version": "1.0.0",
+                  "from": "sigmund@~1.0.0",
+                  "resolved": "http://npm.corp.squareup.com:8000/sigmund/-/sigmund-1.0.0.tgz"
+                }
+              }
+            },
+            "graceful-fs": {
+              "version": "2.0.3",
+              "from": "graceful-fs@~2.0.0",
+              "resolved": "http://npm.corp.squareup.com:8000/graceful-fs/-/graceful-fs-2.0.3.tgz"
+            },
+            "inherits": {
+              "version": "2.0.1",
+              "from": "inherits@2",
+              "resolved": "http://npm.corp.squareup.com:8000/inherits/-/inherits-2.0.1.tgz"
+            }
+          }
+        }
+      }
+    },
+    "request": {
+      "version": "2.37.0",
+      "from": "request@*",
+      "resolved": "http://npm.corp.squareup.com:8000/request/-/request-2.37.0.tgz",
+      "dependencies": {
+        "qs": {
+          "version": "0.6.6",
+          "from": "qs@~0.6.0",
+          "resolved": "https://registry.npmjs.org/qs/-/qs-0.6.6.tgz"
+        },
+        "json-stringify-safe": {
+          "version": "5.0.0",
+          "from": "json-stringify-safe@~5.0.0",
+          "resolved": "http://npm.corp.squareup.com:8000/json-stringify-safe/-/json-stringify-safe-5.0.0.tgz"
+        },
+        "mime-types": {
+          "version": "1.0.1",
+          "from": "mime-types@~1.0.1",
+          "resolved": "http://npm.corp.squareup.com:8000/mime-types/-/mime-types-1.0.1.tgz"
+        },
+        "forever-agent": {
+          "version": "0.5.2",
+          "from": "forever-agent@~0.5.0",
+          "resolved": "http://npm.corp.squareup.com:8000/forever-agent/-/forever-agent-0.5.2.tgz"
+        },
+        "node-uuid": {
+          "version": "1.4.1",
+          "from": "node-uuid@~1.4.0",
+          "resolved": "http://npm.corp.squareup.com:8000/node-uuid/-/node-uuid-1.4.1.tgz"
+        },
+        "tough-cookie": {
+          "version": "0.12.1",
+          "from": "tough-cookie@>=0.12.0",
+          "resolved": "http://npm.corp.squareup.com:8000/tough-cookie/-/tough-cookie-0.12.1.tgz",
+          "dependencies": {
+            "punycode": {
+              "version": "1.3.0",
+              "from": "punycode@>=0.2.0",
+              "resolved": "http://npm.corp.squareup.com:8000/punycode/-/punycode-1.3.0.tgz"
+            }
+          }
+        },
+        "form-data": {
+          "version": "0.1.4",
+          "from": "form-data@~0.1.0",
+          "resolved": "http://npm.corp.squareup.com:8000/form-data/-/form-data-0.1.4.tgz",
+          "dependencies": {
+            "combined-stream": {
+              "version": "0.0.5",
+              "from": "combined-stream@~0.0.4",
+              "resolved": "http://npm.corp.squareup.com:8000/combined-stream/-/combined-stream-0.0.5.tgz",
+              "dependencies": {
+                "delayed-stream": {
+                  "version": "0.0.5",
+                  "from": "delayed-stream@0.0.5",
+                  "resolved": "http://npm.corp.squareup.com:8000/delayed-stream/-/delayed-stream-0.0.5.tgz"
+                }
+              }
+            },
+            "mime": {
+              "version": "1.2.11",
+              "from": "mime@~1.2.11",
+              "resolved": "http://npm.corp.squareup.com:8000/mime/-/mime-1.2.11.tgz"
+            },
+            "async": {
+              "version": "0.9.0",
+              "from": "async@~0.9.0",
+              "resolved": "http://npm.corp.squareup.com:8000/async/-/async-0.9.0.tgz"
+            }
+          }
+        },
+        "tunnel-agent": {
+          "version": "0.4.0",
+          "from": "tunnel-agent@~0.4.0",
+          "resolved": "http://npm.corp.squareup.com:8000/tunnel-agent/-/tunnel-agent-0.4.0.tgz"
+        },
+        "http-signature": {
+          "version": "0.10.0",
+          "from": "http-signature@~0.10.0",
+          "resolved": "http://npm.corp.squareup.com:8000/http-signature/-/http-signature-0.10.0.tgz",
+          "dependencies": {
+            "assert-plus": {
+              "version": "0.1.2",
+              "from": "assert-plus@0.1.2",
+              "resolved": "http://npm.corp.squareup.com:8000/assert-plus/-/assert-plus-0.1.2.tgz"
+            },
+            "asn1": {
+              "version": "0.1.11",
+              "from": "asn1@0.1.11",
+              "resolved": "http://npm.corp.squareup.com:8000/asn1/-/asn1-0.1.11.tgz"
+            },
+            "ctype": {
+              "version": "0.5.2",
+              "from": "ctype@0.5.2",
+              "resolved": "http://npm.corp.squareup.com:8000/ctype/-/ctype-0.5.2.tgz"
+            }
+          }
+        },
+        "oauth-sign": {
+          "version": "0.3.0",
+          "from": "oauth-sign@~0.3.0",
+          "resolved": "http://npm.corp.squareup.com:8000/oauth-sign/-/oauth-sign-0.3.0.tgz"
+        },
+        "hawk": {
+          "version": "1.1.1",
+          "from": "hawk@1.1.1",
+          "resolved": "http://npm.corp.squareup.com:8000/hawk/-/hawk-1.1.1.tgz",
+          "dependencies": {
+            "hoek": {
+              "version": "0.9.1",
+              "from": "hoek@0.9.x",
+              "resolved": "http://npm.corp.squareup.com:8000/hoek/-/hoek-0.9.1.tgz"
+            },
+            "boom": {
+              "version": "0.4.2",
+              "from": "boom@0.4.x",
+              "resolved": "http://npm.corp.squareup.com:8000/boom/-/boom-0.4.2.tgz"
+            },
+            "cryptiles": {
+              "version": "0.2.2",
+              "from": "cryptiles@0.2.x",
+              "resolved": "http://npm.corp.squareup.com:8000/cryptiles/-/cryptiles-0.2.2.tgz"
+            },
+            "sntp": {
+              "version": "0.2.4",
+              "from": "sntp@0.2.x",
+              "resolved": "http://npm.corp.squareup.com:8000/sntp/-/sntp-0.2.4.tgz"
+            }
+          }
+        },
+        "aws-sign2": {
+          "version": "0.5.0",
+          "from": "aws-sign2@~0.5.0",
+          "resolved": "http://npm.corp.squareup.com:8000/aws-sign2/-/aws-sign2-0.5.0.tgz"
+        }
+      }
+    },
+    "sum-component": {
+      "version": "0.1.1",
+      "from": "sum-component@*",
+      "resolved": "http://npm.corp.squareup.com:8000/sum-component/-/sum-component-0.1.1.tgz",
+      "dependencies": {
+        "to-function": {
+          "version": "2.0.5",
+          "from": "to-function@*",
+          "resolved": "http://npm.corp.squareup.com:8000/to-function/-/to-function-2.0.5.tgz",
+          "dependencies": {
+            "component-props": {
+              "version": "1.1.1",
+              "from": "component-props@*",
+              "resolved": "http://npm.corp.squareup.com:8000/component-props/-/component-props-1.1.1.tgz"
+            },
+            "remove-try-require": {
+              "version": "0.0.0",
+              "from": "remove-try-require@0.0.0",
+              "resolved": "http://npm.corp.squareup.com:8000/remove-try-require/-/remove-try-require-0.0.0.tgz",
+              "dependencies": {
+                "ast-transform": {
+                  "version": "0.0.0",
+                  "from": "ast-transform@0.0.0",
+                  "resolved": "http://npm.corp.squareup.com:8000/ast-transform/-/ast-transform-0.0.0.tgz",
+                  "dependencies": {
+                    "through": {
+                      "version": "2.3.4",
+                      "from": "through@~2.3.4",
+                      "resolved": "http://npm.corp.squareup.com:8000/through/-/through-2.3.4.tgz"
+                    },
+                    "esprima": {
+                      "version": "1.0.4",
+                      "from": "esprima@~1.0.4",
+                      "resolved": "http://npm.corp.squareup.com:8000/esprima/-/esprima-1.0.4.tgz"
+                    },
+                    "escodegen": {
+                      "version": "1.2.0",
+                      "from": "escodegen@~1.2.0",
+                      "resolved": "http://npm.corp.squareup.com:8000/escodegen/-/escodegen-1.2.0.tgz",
+                      "dependencies": {
+                        "estraverse": {
+                          "version": "1.5.1",
+                          "from": "estraverse@~1.5.0",
+                          "resolved": "http://npm.corp.squareup.com:8000/estraverse/-/estraverse-1.5.1.tgz"
+                        },
+                        "esutils": {
+                          "version": "1.0.0",
+                          "from": "esutils@~1.0.0",
+                          "resolved": "http://npm.corp.squareup.com:8000/esutils/-/esutils-1.0.0.tgz"
+                        },
+                        "source-map": {
+                          "version": "0.1.37",
+                          "from": "source-map@~0.1.30",
+                          "resolved": "http://npm.corp.squareup.com:8000/source-map/-/source-map-0.1.37.tgz",
+                          "dependencies": {
+                            "amdefine": {
+                              "version": "0.1.0",
+                              "from": "amdefine@>=0.0.4",
+                              "resolved": "http://npm.corp.squareup.com:8000/amdefine/-/amdefine-0.1.0.tgz"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "ast-parents": {
+                  "version": "0.0.1",
+                  "from": "ast-parents@0.0.1",
+                  "resolved": "http://npm.corp.squareup.com:8000/ast-parents/-/ast-parents-0.0.1.tgz"
+                },
+                "replace-method": {
+                  "version": "0.0.0",
+                  "from": "replace-method@0.0.0",
+                  "resolved": "http://npm.corp.squareup.com:8000/replace-method/-/replace-method-0.0.0.tgz",
+                  "dependencies": {
+                    "recast": {
+                      "version": "0.5.27",
+                      "from": "recast@~0.5.7",
+                      "resolved": "http://npm.corp.squareup.com:8000/recast/-/recast-0.5.27.tgz",
+                      "dependencies": {
+                        "esprima": {
+                          "version": "1.1.0-dev-harmony",
+                          "from": "esprima@git+https://github.com/ariya/esprima.git#harmony",
+                          "resolved": "git+https://github.com/ariya/esprima.git#2bb17ef9a45c88e82d72c2c61b7b7af93caef028"
+                        },
+                        "source-map": {
+                          "version": "0.1.32",
+                          "from": "source-map@0.1.32",
+                          "resolved": "http://npm.corp.squareup.com:8000/source-map/-/source-map-0.1.32.tgz",
+                          "dependencies": {
+                            "amdefine": {
+                              "version": "0.1.0",
+                              "from": "amdefine@>=0.0.4",
+                              "resolved": "http://npm.corp.squareup.com:8000/amdefine/-/amdefine-0.1.0.tgz"
+                            }
+                          }
+                        },
+                        "private": {
+                          "version": "0.1.5",
+                          "from": "private@~0.1.4",
+                          "resolved": "http://npm.corp.squareup.com:8000/private/-/private-0.1.5.tgz"
+                        },
+                        "cls": {
+                          "version": "0.1.5",
+                          "from": "cls@~0.1.3",
+                          "resolved": "http://npm.corp.squareup.com:8000/cls/-/cls-0.1.5.tgz"
+                        },
+                        "ast-types": {
+                          "version": "0.3.38",
+                          "from": "ast-types@~0.3.35",
+                          "resolved": "http://npm.corp.squareup.com:8000/ast-types/-/ast-types-0.3.38.tgz"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "term-canvas": {
+      "version": "0.0.5",
+      "from": "term-canvas@*",
+      "resolved": "http://npm.corp.squareup.com:8000/term-canvas/-/term-canvas-0.0.5.tgz"
+    },
+    "wd": {
+      "version": "0.3.3",
+      "from": "wd@git://github.com/admc/wd.git",
+      "resolved": "git://github.com/admc/wd.git#f49065fa8ff91411f70972f149e90b7f97f4cd39",
+      "dependencies": {
+        "archiver": {
+          "version": "0.10.1",
+          "from": "archiver@~0.10.0",
+          "resolved": "http://npm.corp.squareup.com:8000/archiver/-/archiver-0.10.1.tgz",
+          "dependencies": {
+            "buffer-crc32": {
+              "version": "0.2.3",
+              "from": "buffer-crc32@~0.2.1",
+              "resolved": "http://npm.corp.squareup.com:8000/buffer-crc32/-/buffer-crc32-0.2.3.tgz"
+            },
+            "readable-stream": {
+              "version": "1.0.27-1",
+              "from": "readable-stream@~1.0.26",
+              "resolved": "http://npm.corp.squareup.com:8000/readable-stream/-/readable-stream-1.0.27-1.tgz",
+              "dependencies": {
+                "core-util-is": {
+                  "version": "1.0.1",
+                  "from": "core-util-is@~1.0.0",
+                  "resolved": "http://npm.corp.squareup.com:8000/core-util-is/-/core-util-is-1.0.1.tgz"
+                },
+                "isarray": {
+                  "version": "0.0.1",
+                  "from": "isarray@0.0.1",
+                  "resolved": "http://npm.corp.squareup.com:8000/isarray/-/isarray-0.0.1.tgz"
+                },
+                "string_decoder": {
+                  "version": "0.10.25",
+                  "from": "string_decoder@~0.10.x",
+                  "resolved": "http://npm.corp.squareup.com:8000/string_decoder/-/string_decoder-0.10.25.tgz"
+                },
+                "inherits": {
+                  "version": "2.0.1",
+                  "from": "inherits@~2.0.1",
+                  "resolved": "http://npm.corp.squareup.com:8000/inherits/-/inherits-2.0.1.tgz"
+                }
+              }
+            },
+            "tar-stream": {
+              "version": "0.4.4",
+              "from": "tar-stream@~0.4.0",
+              "resolved": "http://npm.corp.squareup.com:8000/tar-stream/-/tar-stream-0.4.4.tgz",
+              "dependencies": {
+                "bl": {
+                  "version": "0.8.2",
+                  "from": "bl@~0.8.1",
+                  "resolved": "http://npm.corp.squareup.com:8000/bl/-/bl-0.8.2.tgz"
+                },
+                "end-of-stream": {
+                  "version": "0.1.5",
+                  "from": "end-of-stream@~0.1.3",
+                  "resolved": "http://npm.corp.squareup.com:8000/end-of-stream/-/end-of-stream-0.1.5.tgz",
+                  "dependencies": {
+                    "once": {
+                      "version": "1.3.0",
+                      "from": "once@~1.3.0",
+                      "resolved": "http://npm.corp.squareup.com:8000/once/-/once-1.3.0.tgz"
+                    }
+                  }
+                },
+                "xtend": {
+                  "version": "3.0.0",
+                  "from": "xtend@~3.0.0",
+                  "resolved": "http://npm.corp.squareup.com:8000/xtend/-/xtend-3.0.0.tgz"
+                }
+              }
+            },
+            "zip-stream": {
+              "version": "0.3.6",
+              "from": "zip-stream@~0.3.0",
+              "resolved": "http://npm.corp.squareup.com:8000/zip-stream/-/zip-stream-0.3.6.tgz",
+              "dependencies": {
+                "crc32-stream": {
+                  "version": "0.2.0",
+                  "from": "crc32-stream@~0.2.0",
+                  "resolved": "http://npm.corp.squareup.com:8000/crc32-stream/-/crc32-stream-0.2.0.tgz"
+                },
+                "deflate-crc32-stream": {
+                  "version": "0.1.1",
+                  "from": "deflate-crc32-stream@~0.1.0",
+                  "resolved": "http://npm.corp.squareup.com:8000/deflate-crc32-stream/-/deflate-crc32-stream-0.1.1.tgz"
+                }
+              }
+            },
+            "lazystream": {
+              "version": "0.1.0",
+              "from": "lazystream@~0.1.0",
+              "resolved": "http://npm.corp.squareup.com:8000/lazystream/-/lazystream-0.1.0.tgz"
+            },
+            "file-utils": {
+              "version": "0.2.0",
+              "from": "file-utils@~0.2.0",
+              "resolved": "http://npm.corp.squareup.com:8000/file-utils/-/file-utils-0.2.0.tgz",
+              "dependencies": {
+                "iconv-lite": {
+                  "version": "0.2.11",
+                  "from": "iconv-lite@~0.2.11",
+                  "resolved": "http://npm.corp.squareup.com:8000/iconv-lite/-/iconv-lite-0.2.11.tgz"
+                },
+                "rimraf": {
+                  "version": "2.2.8",
+                  "from": "rimraf@~2.2.2",
+                  "resolved": "http://npm.corp.squareup.com:8000/rimraf/-/rimraf-2.2.8.tgz"
+                },
+                "glob": {
+                  "version": "3.2.11",
+                  "from": "glob@~3.2.6",
+                  "resolved": "http://npm.corp.squareup.com:8000/glob/-/glob-3.2.11.tgz",
+                  "dependencies": {
+                    "inherits": {
+                      "version": "2.0.1",
+                      "from": "inherits@2",
+                      "resolved": "http://npm.corp.squareup.com:8000/inherits/-/inherits-2.0.1.tgz"
+                    },
+                    "minimatch": {
+                      "version": "0.3.0",
+                      "from": "minimatch@0.3",
+                      "resolved": "http://npm.corp.squareup.com:8000/minimatch/-/minimatch-0.3.0.tgz",
+                      "dependencies": {
+                        "lru-cache": {
+                          "version": "2.5.0",
+                          "from": "lru-cache@2",
+                          "resolved": "http://npm.corp.squareup.com:8000/lru-cache/-/lru-cache-2.5.0.tgz"
+                        },
+                        "sigmund": {
+                          "version": "1.0.0",
+                          "from": "sigmund@~1.0.0",
+                          "resolved": "http://npm.corp.squareup.com:8000/sigmund/-/sigmund-1.0.0.tgz"
+                        }
+                      }
+                    }
+                  }
+                },
+                "minimatch": {
+                  "version": "0.2.14",
+                  "from": "minimatch@~0.2.12",
+                  "resolved": "http://npm.corp.squareup.com:8000/minimatch/-/minimatch-0.2.14.tgz",
+                  "dependencies": {
+                    "lru-cache": {
+                      "version": "2.5.0",
+                      "from": "lru-cache@2",
+                      "resolved": "http://npm.corp.squareup.com:8000/lru-cache/-/lru-cache-2.5.0.tgz"
+                    },
+                    "sigmund": {
+                      "version": "1.0.0",
+                      "from": "sigmund@~1.0.0",
+                      "resolved": "http://npm.corp.squareup.com:8000/sigmund/-/sigmund-1.0.0.tgz"
+                    }
+                  }
+                },
+                "findup-sync": {
+                  "version": "0.1.3",
+                  "from": "findup-sync@~0.1.2",
+                  "resolved": "http://npm.corp.squareup.com:8000/findup-sync/-/findup-sync-0.1.3.tgz"
+                },
+                "isbinaryfile": {
+                  "version": "2.0.1",
+                  "from": "isbinaryfile@~2.0.0",
+                  "resolved": "http://npm.corp.squareup.com:8000/isbinaryfile/-/isbinaryfile-2.0.1.tgz"
+                }
+              }
+            }
+          }
+        },
+        "async": {
+          "version": "0.9.0",
+          "from": "async@~0.9.0",
+          "resolved": "http://npm.corp.squareup.com:8000/async/-/async-0.9.0.tgz"
+        },
+        "colors": {
+          "version": "0.6.2",
+          "from": "colors@~0.6.2",
+          "resolved": "http://npm.corp.squareup.com:8000/colors/-/colors-0.6.2.tgz"
+        },
+        "lodash": {
+          "version": "2.4.1",
+          "from": "lodash@~2.4.1",
+          "resolved": "http://npm.corp.squareup.com:8000/lodash/-/lodash-2.4.1.tgz"
+        },
+        "q": {
+          "version": "1.0.1",
+          "from": "q@~1.0.1",
+          "resolved": "http://npm.corp.squareup.com:8000/q/-/q-1.0.1.tgz"
+        },
+        "request": {
+          "version": "2.36.0",
+          "from": "request@~2.36.0",
+          "resolved": "http://npm.corp.squareup.com:8000/request/-/request-2.36.0.tgz",
+          "dependencies": {
+            "qs": {
+              "version": "0.6.6",
+              "from": "qs@~0.6.0",
+              "resolved": "https://registry.npmjs.org/qs/-/qs-0.6.6.tgz"
+            },
+            "json-stringify-safe": {
+              "version": "5.0.0",
+              "from": "json-stringify-safe@~5.0.0",
+              "resolved": "http://npm.corp.squareup.com:8000/json-stringify-safe/-/json-stringify-safe-5.0.0.tgz"
+            },
+            "mime": {
+              "version": "1.2.11",
+              "from": "mime@~1.2.9",
+              "resolved": "http://npm.corp.squareup.com:8000/mime/-/mime-1.2.11.tgz"
+            },
+            "forever-agent": {
+              "version": "0.5.2",
+              "from": "forever-agent@~0.5.0",
+              "resolved": "http://npm.corp.squareup.com:8000/forever-agent/-/forever-agent-0.5.2.tgz"
+            },
+            "node-uuid": {
+              "version": "1.4.1",
+              "from": "node-uuid@~1.4.0",
+              "resolved": "http://npm.corp.squareup.com:8000/node-uuid/-/node-uuid-1.4.1.tgz"
+            },
+            "tough-cookie": {
+              "version": "0.12.1",
+              "from": "tough-cookie@>=0.12.0",
+              "resolved": "http://npm.corp.squareup.com:8000/tough-cookie/-/tough-cookie-0.12.1.tgz",
+              "dependencies": {
+                "punycode": {
+                  "version": "1.3.0",
+                  "from": "punycode@>=0.2.0",
+                  "resolved": "http://npm.corp.squareup.com:8000/punycode/-/punycode-1.3.0.tgz"
+                }
+              }
+            },
+            "form-data": {
+              "version": "0.1.4",
+              "from": "form-data@~0.1.0",
+              "resolved": "http://npm.corp.squareup.com:8000/form-data/-/form-data-0.1.4.tgz",
+              "dependencies": {
+                "combined-stream": {
+                  "version": "0.0.5",
+                  "from": "combined-stream@~0.0.4",
+                  "resolved": "http://npm.corp.squareup.com:8000/combined-stream/-/combined-stream-0.0.5.tgz",
+                  "dependencies": {
+                    "delayed-stream": {
+                      "version": "0.0.5",
+                      "from": "delayed-stream@0.0.5",
+                      "resolved": "http://npm.corp.squareup.com:8000/delayed-stream/-/delayed-stream-0.0.5.tgz"
+                    }
+                  }
+                }
+              }
+            },
+            "tunnel-agent": {
+              "version": "0.4.0",
+              "from": "tunnel-agent@~0.4.0",
+              "resolved": "http://npm.corp.squareup.com:8000/tunnel-agent/-/tunnel-agent-0.4.0.tgz"
+            },
+            "http-signature": {
+              "version": "0.10.0",
+              "from": "http-signature@~0.10.0",
+              "resolved": "http://npm.corp.squareup.com:8000/http-signature/-/http-signature-0.10.0.tgz",
+              "dependencies": {
+                "assert-plus": {
+                  "version": "0.1.2",
+                  "from": "assert-plus@0.1.2",
+                  "resolved": "http://npm.corp.squareup.com:8000/assert-plus/-/assert-plus-0.1.2.tgz"
+                },
+                "asn1": {
+                  "version": "0.1.11",
+                  "from": "asn1@0.1.11",
+                  "resolved": "http://npm.corp.squareup.com:8000/asn1/-/asn1-0.1.11.tgz"
+                },
+                "ctype": {
+                  "version": "0.5.2",
+                  "from": "ctype@0.5.2",
+                  "resolved": "http://npm.corp.squareup.com:8000/ctype/-/ctype-0.5.2.tgz"
+                }
+              }
+            },
+            "oauth-sign": {
+              "version": "0.3.0",
+              "from": "oauth-sign@~0.3.0",
+              "resolved": "http://npm.corp.squareup.com:8000/oauth-sign/-/oauth-sign-0.3.0.tgz"
+            },
+            "hawk": {
+              "version": "1.0.0",
+              "from": "hawk@~1.0.0",
+              "resolved": "http://npm.corp.squareup.com:8000/hawk/-/hawk-1.0.0.tgz",
+              "dependencies": {
+                "hoek": {
+                  "version": "0.9.1",
+                  "from": "hoek@0.9.x",
+                  "resolved": "http://npm.corp.squareup.com:8000/hoek/-/hoek-0.9.1.tgz"
+                },
+                "boom": {
+                  "version": "0.4.2",
+                  "from": "boom@0.4.x",
+                  "resolved": "http://npm.corp.squareup.com:8000/boom/-/boom-0.4.2.tgz"
+                },
+                "cryptiles": {
+                  "version": "0.2.2",
+                  "from": "cryptiles@0.2.x",
+                  "resolved": "http://npm.corp.squareup.com:8000/cryptiles/-/cryptiles-0.2.2.tgz"
+                },
+                "sntp": {
+                  "version": "0.2.4",
+                  "from": "sntp@0.2.x",
+                  "resolved": "http://npm.corp.squareup.com:8000/sntp/-/sntp-0.2.4.tgz"
+                }
+              }
+            },
+            "aws-sign2": {
+              "version": "0.5.0",
+              "from": "aws-sign2@~0.5.0",
+              "resolved": "http://npm.corp.squareup.com:8000/aws-sign2/-/aws-sign2-0.5.0.tgz"
+            }
+          }
+        },
+        "underscore.string": {
+          "version": "2.3.3",
+          "from": "underscore.string@~2.3.3",
+          "resolved": "http://npm.corp.squareup.com:8000/underscore.string/-/underscore.string-2.3.3.tgz"
+        },
+        "vargs": {
+          "version": "0.1.0",
+          "from": "vargs@~0.1.0",
+          "resolved": "http://npm.corp.squareup.com:8000/vargs/-/vargs-0.1.0.tgz"
+        }
+      }
+    }
+  }
+}
