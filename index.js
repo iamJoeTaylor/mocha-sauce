@@ -23,6 +23,7 @@ function MochaSauce(conf) {
 	this.port = conf.port || process.env.SELENIUM_PORT || 80;
         this.tunnel_identifier = conf.tunnelIdentifier;
         this['max-duration'] = conf.maxDuration || 1800;
+        this['idle-timeout'] = conf.idleTimeout || 90;
 
 	this.browsers = [];
 
@@ -88,6 +89,7 @@ MochaSauce.prototype.start = function(fn) {
 		conf.name = self.name;
 		conf.build = self.build;
                 conf["max-duration"] = self["max-duration"];
+                conf["idle-timeout"] = self["idle-timeout"];
                 if(self.tunnel_identifier) {
                   conf.tunnel_identifier = self.tunnel_identifier;
                 }
