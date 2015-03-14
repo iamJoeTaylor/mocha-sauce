@@ -88,7 +88,7 @@ function mochaSaucePlease(options, fn) {
 
 		// Generate JSON coverage
 		mocha.reporter(FancyJSON);
-		new mocha._reporter(runner);
+		new mocha._reporter(runner,{});
 
 		// Generate XUnit coverage
 		window.xUnitReport = 'off';
@@ -107,7 +107,7 @@ function mochaSaucePlease(options, fn) {
 				};
 			})();
 			mocha.reporter("xunit");
-			new mocha._reporter(runner);
+			new mocha._reporter(runner,{});
 		}
 
 		// The Grid view needs more info about failures
@@ -128,7 +128,7 @@ function mochaSaucePlease(options, fn) {
 			runner.stats.failed = failed;
 			runner.stats.xUnitReport = xUnitReport;
 			runner.stats.jsonReport = jsonReport;
-                        if(failed) {
+                        if(failed&&$) {
                           $('.suite').addClass('hidden');
                           $('.fail').parents('.suite').removeClass('hidden');
                         }
